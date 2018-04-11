@@ -11,7 +11,10 @@ RSpec.describe PostsController do
   let(:article_found) { Post.find(@article.id) }
 
   before do
+
     @article = Post.create!(attributes)
+    # binding.pry
+
   end
 
   describe "showing a post" do
@@ -79,4 +82,3 @@ RSpec.describe PostsController do
   end
 
 end
-
